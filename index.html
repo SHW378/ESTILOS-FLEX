@@ -3,85 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estilos CSS</title>
+    <title>Dental Care</title>
     <link rel="stylesheet" href="style/myStyle.css" />
     <link rel="stylesheet" href="style/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <div class="d-flex justify-content-center bg-transparent">
-      <h1>Contenedores</h1>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dental Care</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>        
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
     </div>
-    <br />
-    <div class="contenedor">
-      <p>
-        Los contenedores son todos aquellos controles html que permiten colocar
-        elementos dentro del mismo de manera visual, envolviendolos con un
-        contorno al que se puede asignar:
-      </p>
+  </nav>
+  <!--Seccion de servicios-->
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="text-center">Nuestros Servicios</h2>
+      <div class="row">
+        <!-- Servicio de Ortodoncia -->
+        <div class="card" style="width: 400px;">
+          <img class="card-img-top" src="img/1.jpg" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!-- Servicio de Limpieza -->
+        <div class="card" style="width: 400px;">
+          <img class="card-img-top" src="img/2.jpg" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Limpieza</h5>
+            <p class="card-text">Mejora tu salid bucal.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!-- Servicio de Blanqueamiento -->
+        <div class="card" style="width: 400px;">
+          <img class="card-img-top" src="img/3.jpg" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Blanqueamiento</h5>
+            <p class="card-text">Tratamiento de blanqueamiento sin rayos uv.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <br />
-    <div class="contenedor">
-      <ul>
-        <li>Bordes</li>
-        <li>Padding</li>
-        <li>Margin</li>
-        <li>etc.....</li>
-      </ul>
+  </section>
+
+  <!-- Seccion de Acerca de -->
+  <section >
+    <div class="container">
+      <h2 class="text-center">Acerca de Nosotros</h2>
+      <p class="text-center">Somos un equipo de profesionales eddicados a brindarte la mejor atencion dental en un ambiente cómodo y moderno.</p>
+
     </div>
-    <br />
-    <div class="contenedor">
-      <h2>Ejemplos de contenedores</h2>
-    </div>
-    <br />
-    <div class="contenedor">
-      <ol>
-        <li>body</li>
-        <li>main</li>
-        <li>header</li>
-        <li>footer</li>
-        <li>aside</li>
-        <li>div (contenedor genérico)</li>
-        <li>section</li>
-        <li>nav</li>
-      </ol>
-    </div>
-  </body>
+  </section>
+</body>
 </html>
