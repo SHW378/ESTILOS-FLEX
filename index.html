@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Dental Care</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,16 +17,16 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
+            <a class="nav-link" href="#servicios">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de</a>
+            <a class="nav-link" href="#acercade">Acerca de</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#ubicacion">Ubicación</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Login</a>
@@ -35,10 +35,10 @@
     </div>
   </nav>
   <!--Seccion de servicios-->
-  <section class="bg-light">
+  <section class="bg-light mt-5 pt-3 " id="servicios">
     <div class="container">
       <h2 class="text-center">Nuestros Servicios</h2>
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <!-- Servicio de Ortodoncia -->
         <div class="card" style="width: 400px;">
           <img class="card-img-top" src="img/1.jpg" alt="Card image cap" />
@@ -73,7 +73,7 @@
   </section>
 
   <!-- Seccion de Acerca de -->
-  <section >
+  <section id="acercade">
     <div class="container">
       <h2 class="text-center">Acerca de Nosotros</h2>
       <p class="text-center">Somos un equipo de profesionales eddicados a brindarte la mejor atencion dental en un ambiente cómodo y moderno.</p>
@@ -91,5 +91,36 @@
       </div>
     </div>
   </section>
+
+  <!-- Seccion de Contacto -->
+  <section id="contacto">
+    <div class="container">
+      <h2 class="text-center">Contáctanos</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Ingresa tu nombre: </label>
+          <input type="text" class="form-label" />
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Correo Electronico</label>
+          <input type="email" class="form-label" placeholder="ingresa tu correo Electronico"/>
+        </div>
+        <div class="col-12">
+          <label class="form-label>">Mensaje</label>
+          <textarea class="form-control" placeholder="Escribe tu mensaje" rows="4"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div> 
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <p>&copy;2025 Servicios Dentales "Dental Care" SA. de CV. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
