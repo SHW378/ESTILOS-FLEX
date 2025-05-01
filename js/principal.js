@@ -14,7 +14,7 @@ function calcularResta() {
     let num2 = document.getElementById("intNum2").value;
 
     let resultado = parseFloat(num1) - parseFloat(num2);
-    alert("El resultado de la suma es: " + resultado);
+    alert("El resultado de la resta es: " + resultado);
     document.getElementById("txtNum1").value = "";
     document.getElementById("txtNum2").value = "";
 }
@@ -24,7 +24,7 @@ function calcularMultiplicacion() {
     let num2 = document.getElementById("intNum2").value;
 
     let resultado = parseFloat(num1) * parseFloat(num2);
-    alert("El resultado de la suma es: " + resultado);
+    alert("El resultado de la multiplicación es: " + resultado);
     document.getElementById("txtNum1").value = "";
     document.getElementById("txtNum2").value = "";
 }
@@ -34,7 +34,7 @@ function calcularDivision() {
     let num2 = document.getElementById("intNum2").value;
 
     let resultado = parseFloat(num1) / parseFloat(num2);
-    alert("El resultado de la suma es: " + resultado);
+    alert("El resultado de la división es: " + resultado);
     document.getElementById("txtNum1").value = "";
     document.getElementById("txtNum2").value = "";
 }
