@@ -24,6 +24,6 @@ let contenedor = document.getElementById("contenedor");
 
 let contenido = "";
 productos.forEach(producto => {
-    contenido = contenido + '<div style="width: 100px; border: solid 1px red; margin: 5px;"> <h3>' + producto + '</h3>' + '</div>'; 
+    contenido = contenido + '<div style="width: 100px; border: solid 1px red; margin: 5px;"> <h3>' + producto.nombreProducto + '</h3>' + '</div>'; 
 })
 contenedor.innerHTML = contenido;
