@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Medicos</title>
+    <link href="../style/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="showElement" class="text-danger collapse">Registro de Medicos</h1>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#showElement">
+        Ocultar
+    </button>
+<div id="seccionFormulario">
+    <h2 class="text-center mb-4">Registro de Medicos</h2>
+    <form class="container">
+        <div class="row mb-3">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group input-group-lg">
+                    <label class="input-group-text" for="txtNombre">Nombre del medico</label>
+                    <input class="form-control" id="txtNombre" type="input" placeholder="Ingresa el nombre del medico" />
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group input-group-lg">
+                    <label class="input-group-text" for="txtPrimerApellido">Primer Apellido</label>
+                    <input class="form-control" id="txtPrimerApellido" type="input" placeholder="Ingresa el primer apellido del medico" />
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group input-group-lg">
+                    <label class="input-group-text" for="txtSegundoApellido">Segundo Apellido</label>
+                    <input class="form-control" id="txtSegundoApellido" type="input" placeholder="Ingresa el segundo apellido del medico" />
+                </div>
+            </div>
+        </div>
+                <div class="row mb-3">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group input-group-lg">
+                    <label class="input-group-text" for="txtCedula">Cedula</label>
+                    <input class="form-control" id="txtCedula" type="input" placeholder="Ingresa la cedula del medico" />
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group input-group-lg">
+                    <label class="input-group-text" for="txtFechaNacimiento">Fecha de nacimiento</label>
+                    <input class="form-control" id="txtFechaNacimiento" type="date" />
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group input-group-lg">
+                    <label class="input-group-text" for="txtGenero">Género</label>
+                    <select id="txtGenero" class="form-select">
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="O">Otro</option>
+                        <option value="N">Prefiero no decirlo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <button type="button" class="btn btn-success btn-lg me-2">Guardar</button>
+                <button type="reset" class="btn btn-warning btn-lg">Limpiar</button>
+            </div>
+        </div>
+    </form>
+</div>
+    <script src="../style/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
