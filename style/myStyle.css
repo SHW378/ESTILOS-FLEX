@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    padding-top: 70px;
 }
 
 section {
@@ -8,6 +9,8 @@ section {
 
 .navbar {
     background-color: #5a89d1 !important;
+    z-index: 1030;
+
 }
 
 .navbar-nav .nav-link {
@@ -15,8 +18,13 @@ section {
     margin-right: 15px;
     color: white;
     transition: opacity 0.3s ease;
+
 }
 
 .navbar-nav .nav-link:hover {
     opacity: 0.7;
+}
+
+#showElement {
+    margin-top: 20px;
 }
