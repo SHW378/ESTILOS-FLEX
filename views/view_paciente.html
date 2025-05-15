@@ -13,62 +13,95 @@
     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#showElement">
         Ocultar
     </button>
-<div id="seccionFormulario">
-    <h2 class="text-center mb-4">Registro de pacientes</h2>
-    <form class="container">
-        <div class="row mb-3">
-            <div class="col-md-6 offset-md-3">
-                <div class="input-group input-group-lg">
-                    <label class="input-group-text" for="txtNombre">Nombre del paciente</label>
-                    <input class="form-control" id="txtNombre" type="input" placeholder="Ingresa el nombre del paciente" />
+    <div id="seccionFormulario">
+        <h2 class="text-center mb-4">Registro de pacientes</h2>
+        <form class="container">
+            <div class="row mb-3">
+                <div class="col-md-6 offset-md-3">
+                    <div class="input-group input-group-lg">
+                        <label class="input-group-text" for="txtNombre">Nombre del paciente</label>
+                        <input class="form-control" id="txtNombre" type="input"
+                            placeholder="Ingresa el nombre del paciente" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-md-6 offset-md-3">
-                <div class="input-group input-group-lg">
-                    <label class="input-group-text" for="txtPrimerApellido">Primer Apellido</label>
-                    <input class="form-control" id="txtPrimerApellido" type="input" placeholder="Ingresa el primer apellido del paciente" />
+            <div class="row mb-3">
+                <div class="col-md-6 offset-md-3">
+                    <div class="input-group input-group-lg">
+                        <label class="input-group-text" for="txtPrimerApellido">Primer Apellido</label>
+                        <input class="form-control" id="txtPrimerApellido" type="input"
+                            placeholder="Ingresa el primer apellido del paciente" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-md-6 offset-md-3">
-                <div class="input-group input-group-lg">
-                    <label class="input-group-text" for="txtSegundoApellido">Segundo Apellido</label>
-                    <input class="form-control" id="txtSegundoApellido" type="input" placeholder="Ingresa el segundo apellido del paciente" />
+            <div class="row mb-3">
+                <div class="col-md-6 offset-md-3">
+                    <div class="input-group input-group-lg">
+                        <label class="input-group-text" for="txtSegundoApellido">Segundo Apellido</label>
+                        <input class="form-control" id="txtSegundoApellido" type="input"
+                            placeholder="Ingresa el segundo apellido del paciente" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-md-6 offset-md-3">
-                <div class="input-group input-group-lg">
-                    <label class="input-group-text" for="txtFechaNacimiento">Fecha de nacimiento</label>
-                    <input class="form-control" id="txtFechaNacimiento" type="date" />
+            <div class="row mb-3">
+                <div class="col-md-6 offset-md-3">
+                    <div class="input-group input-group-lg">
+                        <label class="input-group-text" for="txtFechaNacimiento">Fecha de nacimiento</label>
+                        <input class="form-control" id="txtFechaNacimiento" type="date" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-md-6 offset-md-3">
-                <div class="input-group input-group-lg">
-                    <label class="input-group-text" for="txtGenero">Género</label>
-                    <select id="txtGenero" class="form-select">
-                        <option value="M">Masculino</option>
-                        <option value="F">Femenino</option>
-                        <option value="O">Otro</option>
-                        <option value="N">Prefiero no decirlo</option>
-                    </select>
+            <div class="row mb-3">
+                <div class="col-md-6 offset-md-3">
+                    <div class="input-group input-group-lg">
+                        <label class="input-group-text" for="txtGenero">Género</label>
+                        <select id="txtGenero" class="form-select">
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                            <option value="O">Otro</option>
+                            <option value="N">Prefiero no decirlo</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3 text-center">
-                <button type="button" class="btn btn-success btn-lg me-2">Guardar</button>
-                <button type="reset" class="btn btn-warning btn-lg">Limpiar</button>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <button type="button" class="btn btn-success btn-lg me-2">Guardar</button>
+                    <button type="reset" class="btn btn-warning btn-lg">Limpiar</button>
+                </div>
             </div>
+        </form>
+    </div>
+    <!-- Seccion de la tabla de pacientes -->
+    <div id="seccionTabla" class="table-container">
+        <h2 class="text-center mb-4">Registros de Pacientes</h2>
+        <div class="table-responsive">
+            <table class="table table-striped ">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Género</th>
+                        <th>Edad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaPacientes">
+                    <tr>
+                        <td>1</td>
+                        <td>César</td>
+                        <td>Cázares Chaván</td>
+                        <td>17-12-2005</td>
+                        <td>Masculino</td>
+                        <td>19</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </form>
-</div>
+    </div>
     <script src="../style/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
