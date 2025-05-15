@@ -36,6 +36,21 @@ function mostrarTabla() {
     
     let cuerpoTabla = "";
     pacientes.forEach(paciente =>{
-        cuerpoTabla += ``;
+        cuerpoTabla += `
+                    <tr>
+                        <td>${paciente.id}</td>
+                        <td>${paciente.nombre}</td>
+                        <td>${paciente.apellido}</td>
+                        <td>${paciente.fechaNacimiento}</td>
+                        <td>${paciente.genero}</td>
+                        <td>${paciente.fechaNacimiento}</td>
+                        <td>
+                            <button class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                        `;
     });
+    tabla.innerHTML = cuerpoTabla;
+
 }
+    mostrarTabla();
