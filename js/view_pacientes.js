@@ -4,7 +4,7 @@ let pacientes = [
     {   id: 1,
         nombre: "Cristian",
         apellido: "Estrada Andrade",
-        fechaNacimiento: "233-11-1997",
+        fechaNacimiento: "23-11-1997",
         genero: "Masculino"
     },
     {   id: 2,
