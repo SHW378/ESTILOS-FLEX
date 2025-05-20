@@ -57,3 +57,34 @@ function mostrarTabla() {
 }
 
 mostrarTabla();
+
+//Función para registrar un nuevo paciente
+function agregarMedico(event) {
+  //event.preventDefault(); //no permite la recarga del formulario cuando se envien los datos
+
+  let medico = { 
+        id: Medicos.length + 1,
+        nombre: document.getElementById("txtNombre").value,
+        apellidos: document.getElementById("txtPrimerApellido").value + " " + document.getElementById("txtSegundoApellido").value,
+        Cedula: document.getElementById("txtCedula").value,
+        ProcedenciaUniversidad: document.getElementById("txtUniversidad").value,
+        FechaNacimiento: document.getElementById("txtFechaNacimiento").value,
+        Genero: document.getElementById("txtGenero").value,
+        Especialidad: document.getElementById("txtEspecialidad").value, 
+  };
+  console.log(medico);
+  Medicos.push(medico);
+  mostrarTabla();
+  limpiarCampos();
+}
+
+function limpiarCampos() {
+    document.getElementById("txtNombre").value = "";
+    document.getElementById("txtPrimerApellido").value = "";
+    document.getElementById("txtSegundoApellido").value = "";
+    document.getElementById("txtCedula").value = "";
+    document.getElementById("txtUniversidad").value = "";
+    document.getElementById("txtFechaNacimiento").value = "";
+    document.getElementById("txtGenero").value = "";
+    document.getElementById("txtEspecialidad").value = "";
+}
